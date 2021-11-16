@@ -5,17 +5,18 @@ import './Style.css';
 
 
 const userProfile = {
+    img: myImage,
     fullName: 'Didier Dakoury',
-    bio: 'Easy to get along with, very kind and hardworking',
-    profession: 'Front-end developer',
-    img: {myImage},
-}
+    bio: 'Very hardworking',
+    profession: 'Front-end developer'
+};
+
+const handleName = (fullName) => alert(`The user's name is: ${fullName}.`) 
 
 function App() {
   return (
     <div className="App">
-      <ProfileComponent user = {userProfile}/>
-
+      <ProfileComponent user = {userProfile} handleName = {handleName} />
     </div>
   );
 }
