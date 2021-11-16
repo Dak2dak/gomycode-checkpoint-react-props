@@ -1,17 +1,19 @@
 import React from "react";
 
 
-const ProfileComponent = (props) =>{
+const ProfileComponent = (user, handleName) =>{
     return(
         <div className="user-profile">
+            <div className="bg-color">
+                <img src={user.img} alt="imageInSrc.jpg"/>
+            </div>
             <div className="user-info">
-                <h2>{props.fullName}</h2>
+                <h2>{user.fullName}</h2>
                 <div>
-                    <p><b>Bio: </b>{props.bio}</p>
-                    <p><b>Profession: </b>{props.profession}</p>
+                    <p><b>Bio: </b>{user.bio}</p>
+                    <p><b>Profession: </b>{user.profession}</p>
                 </div>
             </div>
-            <img src={props.img} alt="didierDak.jpg"/>
         </div>
     );
 }

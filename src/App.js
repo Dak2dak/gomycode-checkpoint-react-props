@@ -1,23 +1,21 @@
 import React from "react";
 import ProfileComponent from './profile/ProfileComponent.js';
-import myImage from './didierDak.jpg';
+import myImage from './imageInSrc.jpg';
+import './Style.css';
+
+
+const userProfile = {
+    fullName: 'Didier Dakoury',
+    bio: 'Easy to get along with, very kind and hardworking',
+    profession: 'Front-end developer',
+    img: {myImage},
+}
 
 function App() {
   return (
     <div className="App">
+      <ProfileComponent user = {userProfile}/>
 
-      {/* passing fullName, bio, profession as props */}
-
-      <ProfileComponent 
-        fullName='Didier Dakoury' 
-        bio='I am easy to get along with, very kind and hardworking.' 
-        profession='I am a front-end developer'
-      />
-
-
-      {/* passing image as children props */}
-
-      <ProfileComponent img={myImage}/>
     </div>
   );
 }
