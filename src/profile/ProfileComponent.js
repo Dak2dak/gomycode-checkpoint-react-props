@@ -27,8 +27,7 @@ const ProfileComponent = (props) =>{
 }
 
 ProfileComponent.defaultProps = {
-    : "",
-    : ""
+    user: 0
   };
 
 ProfileComponent.propTypes = {
