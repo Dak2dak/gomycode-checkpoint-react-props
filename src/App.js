@@ -1,12 +1,12 @@
 import React from "react";
 import ProfileComponent from './profile/ProfileComponent.js';
 import myImage from './imageInSrc.jpg';
-// import './Style.css';
+import './Style.css';
 
 
 const userProfile = {
     img: myImage,
-    fullName: 'Didier Dakoury',
+    fullName: 'Linda Walles',
     bio: 'Very hardworking',
     profession: 'Front-end developer'
 };
